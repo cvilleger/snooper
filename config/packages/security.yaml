@@ -1,0 +1,30 @@
+security:
+    providers:
+        db_provider:
+            entity:
+                class: App\Entity\User
+                property: email
+
+    firewalls:
+        secured_area:
+            anonymous: ~
+            logout:
+                path: /logout
+                target: /
+            oauth:
+                resource_owners:
+                    github:             "/login/check-github"
+                login_path:        /connect/github
+                use_forward:       false
+
+                oauth_user_provider:
+                    service: App\Provider\UserProvider
+
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+
+    access_control:
+        - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/profile, roles: ROLE_USER }
+        - { path: ^/repository, roles: ROLE_USER }

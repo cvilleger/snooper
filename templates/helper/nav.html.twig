@@ -1,0 +1,55 @@
+<nav>
+    <div class="nav-wrapper blue-grey darken-4">
+        <a href="{{ path('default') }}" class="brand-logo center"><i class="material-icons">business</i></a>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        {% if is_granted('ROLE_USER') %}
+            <ul class="left hide-on-med-and-down">
+                <li>
+                    <a class="dropdown-trigger" data-target="profile-dropdown">
+                        <i class="material-icons left">person</i><i class="material-icons">arrow_drop_down</i>
+                    </a>
+                </li>
+            </ul>
+        {% else %}
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a class="waves-effect waves-light btn-small light-green" href="{{ hwi_oauth_login_url('github') }}">
+                        <i class="material-icons left">lock</i>Sign in - Github
+                    </a>
+                </li>
+            </ul>
+        {% endif %}
+    </div>
+</nav>
+<ul id="profile-dropdown" class="dropdown-content">
+    <li><a href="{{ path('default') }}"><i class="material-icons">home</i>Home</a></li>
+    <li class="divider"></li>
+    <li><a href="{{ path('profile') }}"><i class="material-icons">person_outline</i>Profile</a></li>
+    <li><a href="{{ path('repository') }}"><i class="material-icons">link</i>Repository</a></li>
+    <li class="divider"></li>
+    <li><a href="{{ path('logout') }}"><i class="material-icons">forward</i>Logout</a></li>
+</ul>
+
+<ul id="slide-out" class="sidenav">
+    {% if is_granted('ROLE_USER') %}
+        <li>
+            <div class="user-view">
+                <a href="#"><i class="large material-icons">person_pin</i></a>
+                <a href="#"><span class="name">{{ app.user.username|capitalize }}</span></a>
+                <a href="#"><span class="email">{{ app.user.email }}</span></a>
+            </div>
+        </li>
+        <li><div class="divider"></div></li>
+        <li><a class="waves-effect" href="{{ path('default') }}"><i class="material-icons">home</i>Home</a></li>
+        <li><a class="waves-effect" href="{{ path('profile') }}"><i class="material-icons">person_outline</i>Profile</a></li>
+        <li><a class="waves-effect" href="{{ path('repository') }}"><i class="material-icons">link</i>Repository</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="waves-effect" href="{{ path('logout') }}"><i class="material-icons">forward</i>Logout</a></li>
+    {% else %}
+        <li>
+            <a class="waves-effect waves-light btn light-green" href="{{ hwi_oauth_login_url('github') }}">
+                <i class="material-icons left">lock</i>Sign in - Github
+            </a>
+        </li>
+    {% endif %}
+</ul>

@@ -1,0 +1,20 @@
+language: php
+php:
+  - 7.2
+  - nightly
+
+matrix:
+  allow_failures:
+    - php: nightly
+
+env:
+  - APP_ENV=test
+
+install:
+  - composer install --no-interaction --no-progress --no-suggest --optimize-autoloader
+
+script:
+  - ./vendor/bin/simple-phpunit --coverage-clover build/logs/clover.xml
+
+after_script:
+  - ./vendor/bin/codacycoverage clover

@@ -1,0 +1,33 @@
+{
+    "name": "Darkmira/extranet",
+    "description": "Extranet project repository",
+    "repository": "https://github.com/Darkmira/extranet",
+    "success_url": "/",
+    "env": {
+        "APP_ENV": {
+            "required": true
+        },
+        "APP_SECRET": {
+            "required": true
+        },
+        "DATABASE_URL": {
+            "required": true
+        },
+        "GOOGLE_CLIENT_ID": {
+            "required": true
+        },
+        "GOOGLE_CLIENT_SECRET": {
+            "required": true
+        }
+    },
+    "environments": {
+        "test": {
+            "env": {
+                "APP_ENV": "test"
+            },
+            "scripts": {
+                "test": "./vendor/bin/simple-phpunit"
+            }
+        }
+    }
+}

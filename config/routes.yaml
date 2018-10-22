@@ -1,0 +1,25 @@
+default:
+    path: /
+    controller: App\Controller\DefaultController::index
+
+hwi_oauth_redirect:
+    resource: "@HWIOAuthBundle/Resources/config/routing/redirect.xml"
+    prefix:   /connect
+
+hwi_oauth_connect:
+    resource: "@HWIOAuthBundle/Resources/config/routing/connect.xml"
+    prefix:   /connect
+
+github_login:
+    path: /login/check-github
+
+profile:
+    path: /profile
+    controller: App\Controller\ProfileController::index
+
+repository:
+    path: /repository
+    controller: App\Controller\RepositoryController::index
+
+logout:
+    path: /logout

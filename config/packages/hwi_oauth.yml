@@ -1,0 +1,10 @@
+hwi_oauth:
+    firewall_names: [secured_area]
+    resource_owners:
+        github:
+            type:                github
+            scope:               'user:email,public_repo'
+            client_id:           '%env(GITHUB_CLIENT_ID)%'
+            client_secret:       '%env(GITHUB_CLIENT_SECRET)%'
+            options:
+                csrf: true
