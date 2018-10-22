@@ -1,0 +1,15 @@
+pool:
+  vmImage: 'Ubuntu 16.04'
+
+variables:
+  phpVersion: 7.2
+
+steps:
+- script: sudo update-alternatives --set php /usr/bin/php$(phpVersion)
+  displayName: 'Use PHP version $(phpVersion)'
+
+- script: composer install --no-interaction --no-progress --no-suggest
+  displayName: 'composer install'
+
+- script: ./vendor/bin/simple-phpunit
+  displayName: 'PHPUnit'
