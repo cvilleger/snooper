@@ -11,7 +11,7 @@ env:
   - APP_ENV=test
 
 install:
-  - composer install --no-interaction --no-progress --no-suggest
+  - composer install --no-interaction --no-progress
 
 script:
   - ./vendor/bin/simple-phpunit --coverage-clover build/logs/clover.xml
