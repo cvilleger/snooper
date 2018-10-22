@@ -14,6 +14,7 @@
         <env name="APP_DEBUG" value="1" />
         <env name="APP_SECRET" value="s$cretf0rt3st" />
         <env name="SHELL_VERBOSITY" value="-1" />
+        <env name="SYMFONY_DEPRECATIONS_HELPER" value="weak"/>
         <env name="GITHUB_CLIENT_ID" value="GITHUB_CLIENT_ID"/>
         <env name="GITHUB_CLIENT_SECRET" value="GITHUB_CLIENT_SECRET"/>
         <!-- define your env variables for the test env here -->
