@@ -1,13 +1,9 @@
-[![Build Status](https://travis-ci.com/Darkmira/extranet.svg?branch=develop)](https://travis-ci.com/Darkmira/extranet)
-[![Build Status](https://semaphoreci.com/api/v1/cvilleger/extranet/branches/develop/shields_badge.svg)](https://semaphoreci.com/cvilleger/extranet)
-[![CircleCI](https://circleci.com/gh/Darkmira/extranet.svg?style=shield)](https://circleci.com/gh/Darkmira/extranet)
+[![Build Status](https://travis-ci.com/cvilleger/snooper.svg?branch=develop)](https://travis-ci.com/cvilleger/snooper)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ae4ee848bd824bd680e7bf8b0040c60a)](https://www.codacy.com/app/cvilleger/snooper)
+[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/ae4ee848bd824bd680e7bf8b0040c60a)](https://www.codacy.com/app/cvilleger/snooper)
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/cdc54ae85a0b4252b7d82450b2fac056)](https://www.codacy.com/app/cvilleger/extranet)
-[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/cdc54ae85a0b4252b7d82450b2fac056)](https://www.codacy.com/app/cvilleger/extranet)
-[![Heroku](http://heroku-badge.herokuapp.com/?app=darkmira-extranet&style=flat&svg=1)](https://darkmira-extranet.herokuapp.com/)
-
-# Extranet
-*Controlled private network platform reachable from employees and partners to a subset of the information accessible from an organization.*
+# Snooper
+*Yet Another Testing Quality Continuous Integration.*
 
 ## Getting Started
 
