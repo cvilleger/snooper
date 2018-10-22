@@ -22,7 +22,7 @@ class User implements UserInterface
     /**
      * @var string
      *
-     * @ORM\Column(unique=true)
+     * @ORM\Column(unique=true, length=190)
      */
     private $email;
 
