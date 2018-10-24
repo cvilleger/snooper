@@ -3,5 +3,11 @@
 {% block title %}Profile{% endblock %}
 
 {% block body %}
-    <div class="container"></div>
+    <div class="container">
+        <ul class="collection">
+            <li class="collection-item">{{ app.user.email }}</li>
+            <li class="collection-item">{{ app.user.username }}</li>
+            <li class="collection-item">{{ app.user.profileUrl }}</li>
+        </ul>
+    </div>
 {% endblock %}

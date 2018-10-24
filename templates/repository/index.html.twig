@@ -3,5 +3,14 @@
 {% block title %}Repository{% endblock %}
 
 {% block body %}
-    <div class="container"></div>
+    <div class="container">
+        <p>{{ repos|length }}</p>
+        <div class="collection">
+            {% for repo in repos %}
+                <a href="#" class="collection-item">{{ repo.full_name }}</a>
+            {% else %}
+                <a href="#" class="collection-item">No Repos</a>
+            {% endfor %}
+        </div>
+    </div>
 {% endblock %}

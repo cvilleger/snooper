@@ -71,6 +71,15 @@
     "doctrine/reflection": {
         "version": "v1.0.0"
     },
+    "eightpoints/guzzle-bundle": {
+        "version": "7.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "7.0",
+            "ref": "e5e657ce5a4ebc99f3c76916938aa0a5f8ef7736"
+        }
+    },
     "gitonomy/gitlib": {
         "version": "v1.0.4"
     },
@@ -193,6 +202,9 @@
     },
     "symfony/event-dispatcher": {
         "version": "v4.0.9"
+    },
+    "symfony/expression-language": {
+        "version": "v4.1.6"
     },
     "symfony/filesystem": {
         "version": "v4.0.9"
