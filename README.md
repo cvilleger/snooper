@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/cvilleger/snooper.svg?branch=develop)](https://travis-ci.com/cvilleger/snooper)
+[![Build Status](https://travis-ci.com/cvilleger/snooper.svg?branch=master)](https://travis-ci.com/cvilleger/snooper)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/ae4ee848bd824bd680e7bf8b0040c60a)](https://www.codacy.com/app/cvilleger/snooper)
 [![Codacy Badge](https://api.codacy.com/project/badge/Coverage/ae4ee848bd824bd680e7bf8b0040c60a)](https://www.codacy.com/app/cvilleger/snooper)
 
